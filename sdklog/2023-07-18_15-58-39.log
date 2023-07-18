@@ -1,0 +1,10 @@
+Begin Time:2023-07-18T15:58:39.084
+[2023-07-18T15:58:39.084 info Netsdk:58964 11220:19848 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000018BA9B90050, dwUser=0000000000000000].
+[2023-07-18T15:58:39.084 info Netsdk:58964 11220:19848 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-07-18T15:58:39.084 info Netsdk:58964 11220:19848 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-07-18T15:58:39.084 info Netsdk:58964 11220:19848 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-07-18T15:58:39.085 info Netsdk:58964 11220:19848 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-07-18T15:58:39.085 info Netsdk:58964 11220:19848 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-07-18T15:58:39.086 info Netsdk:58964 11220:19848 dhnetsdk.cpp:1075]Enter CLIENT_Logout. lLoginID:-1446263664.
+[2023-07-18T15:58:39.086 error Netsdk:58964 11220:19848 TPTCPClient.cpp:723]Device is not online, ip:192.168.0.121
+[2023-07-18T15:58:39.086 info Netsdk:58964 11220:19848 dhnetsdk.cpp:1097]Leave CLIENT_Logout. ret:1

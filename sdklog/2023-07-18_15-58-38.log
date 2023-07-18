@@ -1,0 +1,19 @@
+Begin Time:2023-07-18T15:58:38.962
+[2023-07-18T15:58:38.962 info Netsdk:58964 11220:19848 AVNetSDKMgr.cpp:504]Load avnetsdk library dynamically
+[2023-07-18T15:58:38.964 info Netsdk:58964 11220:19848 AVNetSDKMgr.cpp:549]avnetsdk module handle: 0000018BABAD0000
+
+[2023-07-18T15:58:38.964 info Netsdk:58964 11220:19848 AVNetSDKMgr.cpp:823]Load configsdk dynamically
+[2023-07-18T15:58:38.966 info Netsdk:58964 11220:19848 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000018BA9B90050, dwUser=0000000000000000].
+[2023-07-18T15:58:38.966 info Netsdk:58964 11220:19848 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-07-18T15:58:38.966 info Netsdk:58964 11220:19848 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-07-18T15:58:38.966 info Netsdk:58964 11220:19848 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-07-18T15:58:38.967 info Netsdk:58964 11220:19848 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-07-18T15:58:38.967 info Netsdk:58964 11220:19848 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-07-18T15:58:38.969 info Netsdk:58964 11220:19848 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:0000018BA8298D50, pstOutParam:0000018BA96EA470.
+[2023-07-18T15:58:38.969 info Netsdk:58964 11220:19848 dhnetsdk.cpp:1007]IP:192.168.0.121, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-07-18T15:58:39.082 info Netsdk:58964 11220:19848 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:0, login ID:-1446263664.
+[2023-07-18T15:58:39.083 info Netsdk:58964 11220:19848 dhnetsdk.cpp:245]Enter CLIENT_InitEx:[cbDisConnect=0000018BA9B90010, dwUser=0000000000000000, lpInitParam=0000000000000000].
+[2023-07-18T15:58:39.083 info Netsdk:58964 11220:19848 AVNetSDKMgr.cpp:736]Test avnetsdk module handle: 0000018BABAD0000
+
+[2023-07-18T15:58:39.083 info Netsdk:58964 11220:19848 dhnetsdk.cpp:268]Leave CLIENT_InitEx.
+[2023-07-18T15:58:39.084 info Netsdk:58964 11220:19848 Manager.cpp:16725]-------------------Log file reset, log number:10-log size:10240------------------
