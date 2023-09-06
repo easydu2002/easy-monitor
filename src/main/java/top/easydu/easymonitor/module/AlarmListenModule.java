@@ -95,11 +95,10 @@ public class AlarmListenModule {
 	private final static fAlarmDataCB cbMessage = new fAlarmDataCB();
 
 	/**
-	 * \if ENGLISH_LANG
-	 * start alarm listen
-	 * \else
 	 * 向设备订阅报警
-	 * \endif
+	 * @param deviceIp 设备IP
+	 * @param callback 异常回调
+	 * @return
 	 */
 	public static boolean startListen(String deviceIp, Consumer<AlarmEventInfo> callback) {
 
@@ -129,13 +128,10 @@ public class AlarmListenModule {
 		return true;
 	}
 
-
 	/**
-	 * \if ENGLISH_LANG
-	 * stop alarm listen
-	 * \else
 	 * 停止订阅报警
-	 * \endif
+	 * @param deviceIp 设备IP
+	 * @return
 	 */
 	public static boolean stopListen(String deviceIp) {
 

@@ -21,16 +21,16 @@ public class MonitorSdk {
     private final static Map<String, LLong> loginHandleMap = new ConcurrentHashMap();
 
     // 设备信息
-    public final static Map<String, NetSDKLib.NET_DEVICEINFO_Ex> deviceInfoExMap = new ConcurrentHashMap<>();
+    private final static Map<String, NetSDKLib.NET_DEVICEINFO_Ex> deviceInfoExMap = new ConcurrentHashMap<>();
 
     public static LLong getLoginHandle(String deviceIp) {
         return loginHandleMap.get(deviceIp);
     }
 
-    public static Map<String, LLong> getLoginHandleAll() {
+    private static Map<String, LLong> getLoginHandleAll() {
         return loginHandleMap;
     }
-    public static NetSDKLib.NET_DEVICEINFO_Ex getDeviceInfo(String deviceIp) {
+    private static NetSDKLib.NET_DEVICEINFO_Ex getDeviceInfo(String deviceIp) {
         return deviceInfoExMap.get(deviceIp);
     }
 
@@ -60,6 +60,14 @@ public class MonitorSdk {
         return success;
     }
 
+    /**
+     * 登录设备
+     * @param m_strIp 设备IP
+     * @param m_nPort 设备 tcp 端口
+     * @param m_strUser 用户名
+     * @param m_strPassword 密码
+     * @return
+     */
     public static boolean login(String m_strIp, int m_nPort, String m_strUser, String m_strPassword) {
 
         LLong lLong = loginHandleMap.get(m_strIp);
@@ -95,11 +103,9 @@ public class MonitorSdk {
     }
 
     /**
-     * \if ENGLISH_LANG
-     * Logout Device
-     * \else
-     * 登出设备
-     * \endif
+     * 退出登录
+     * @param ip 设备IP
+     * @return
      */
     public static boolean logout(String ip) {
 

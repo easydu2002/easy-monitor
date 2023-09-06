@@ -7,11 +7,26 @@ import java.util.Date;
 public class AlarmEventInfo {
     public static long index = 0;
     public long id;
+    /**
+     * 报警通道
+     */
     public int chn;
+    /**
+     * 报警类型
+     */
     public int type;
+    /**
+     * 报警日期
+     */
     public Date date;
+    /**
+     * 报警状态
+     */
     public AlarmStatus status;
 
+    /**
+     * 报警设备IP
+     */
     public String deviceIp;
 
     public AlarmEventInfo(int chn, int type, AlarmStatus status) {

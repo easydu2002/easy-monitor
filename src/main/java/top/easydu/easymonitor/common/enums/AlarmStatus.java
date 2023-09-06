@@ -1,5 +1,12 @@
 package top.easydu.easymonitor.common.enums;
 
 public enum AlarmStatus {
-    ALARM_START, ALARM_STOP
+    /**
+     * 开始报警
+     */
+    ALARM_START,
+    /**
+     * 报警结束
+     */
+    ALARM_STOP,
 }
