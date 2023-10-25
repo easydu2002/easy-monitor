@@ -15,13 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40653053-68a5-41a6-9a0e-a00636f42414" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/doc.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/easy_monitor_jar/easy-monitor.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/easy_monitor_jar/easy-monitor.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/MonitorSdk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/MonitorSdk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/common/enums/AlarmStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/common/enums/AlarmStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/model/AlarmEventInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/model/AlarmEventInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/module/AlarmListenModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/easydu/easymonitor/module/AlarmListenModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/top/easydu/easymonitor/LoginModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/easydu/easymonitor/LoginModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/MonitorSdk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/MonitorSdk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/common/enums/AlarmStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/common/enums/AlarmStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/model/AlarmEventInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/model/AlarmEventInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/module/AlarmListenModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/easydu/easymonitor/module/AlarmListenModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/top/easydu/easymonitor/LoginModuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/top/easydu/easymonitor/LoginModuleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <recent name="top.easydu.easymonitory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginModuleTest">
+  <component name="RunManager" selected="JUnit.LoginModuleTest.testLogin">
     <configuration name="LoginModuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="easy-monitor" />
       <extension name="coverage">
@@ -137,7 +139,15 @@
       <workItem from="1689650024935" duration="8396000" />
       <workItem from="1689666944327" duration="1795000" />
       <workItem from="1689671823545" duration="391000" />
-      <workItem from="1693963259010" duration="1237000" />
+      <workItem from="1693963259010" duration="5524000" />
+      <workItem from="1694048057602" duration="26000" />
+      <workItem from="1694507520467" duration="798000" />
+      <workItem from="1694508340112" duration="5000" />
+      <workItem from="1695373993474" duration="361000" />
+      <workItem from="1695374580102" duration="726000" />
+      <workItem from="1695385406063" duration="971000" />
+      <workItem from="1697785257200" duration="715000" />
+      <workItem from="1697792292354" duration="371000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 import com.netsdk.lib.NetSDKLib.LLong;
+import top.easydu.easymonitor.module.AlarmListenModule;
+
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -115,6 +117,9 @@ public class MonitorSdk {
             return false;
         }
 
+//        登出必须先停止监听，不然下次登录就监听不上
+        AlarmListenModule.stopListen(ip);
+
         boolean bRet = LoginModule.netsdk.CLIENT_Logout(lLong);
 
         if(bRet) {
@@ -129,6 +134,7 @@ public class MonitorSdk {
      */
     public static void logoutAll() {
         loginHandleMap.keySet().forEach(ip -> MonitorSdk.logout(ip));
+        loginHandleMap.clear();
     }
 
 }

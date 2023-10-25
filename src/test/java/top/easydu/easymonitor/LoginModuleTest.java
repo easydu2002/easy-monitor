@@ -17,6 +17,7 @@ public class LoginModuleTest {
     @Test
     public void testLogin() {
         assertTrue("登录异常", MonitorSdk.login("192.168.0.121", 37777, "admin", "dahua123@dc"));
+
     }
 
     @Test
