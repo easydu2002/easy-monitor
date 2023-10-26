@@ -1,0 +1,24 @@
+Begin Time:2023-09-12T16:40:40.790
+[2023-09-12T16:40:40.790 info Netsdk:58964 11220:15328 AVNetSDKMgr.cpp:504]Load avnetsdk library dynamically
+[2023-09-12T16:40:40.793 info Netsdk:58964 11220:15328 AVNetSDKMgr.cpp:549]avnetsdk module handle: 0000014652250000
+
+[2023-09-12T16:40:40.793 info Netsdk:58964 11220:15328 AVNetSDKMgr.cpp:823]Load configsdk dynamically
+[2023-09-12T16:40:40.795 info Netsdk:58964 11220:15328 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=000001464EAE0050, dwUser=0000000000000000].
+[2023-09-12T16:40:40.795 info Netsdk:58964 11220:15328 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-09-12T16:40:40.795 info Netsdk:58964 11220:15328 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-09-12T16:40:40.795 info Netsdk:58964 11220:15328 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-09-12T16:40:40.796 info Netsdk:58964 11220:15328 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-09-12T16:40:40.796 info Netsdk:58964 11220:15328 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-09-12T16:41:01.927 info Netsdk:58964 11220:15328 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:000001464F009CA0, pstOutParam:000001464F8BCB30.
+[2023-09-12T16:41:01.927 info Netsdk:58964 11220:15328 dhnetsdk.cpp:1007]IP:192.168.0.121, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-09-12T16:41:02.024 info Netsdk:58964 11220:15328 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:0, login ID:1319940736.
+[2023-09-12T16:41:04.840 info Netsdk:58964 11220:15328 dhnetsdk.cpp:534]Enter CLIENT_SetDVRMessCallBack: [cbMessage=000001464EAE0090, dwUser=0000000000000000].
+[2023-09-12T16:41:04.840 info Netsdk:58964 11220:15328 dhnetsdk.cpp:536]Leave CLIENT_SetDVRMessCallBack.
+[2023-09-12T16:41:04.840 info Netsdk:58964 11220:15328 dhnetsdk.cpp:4681]Enter CLIENT_StartListenEx. lLoginID:1319940736.
+[2023-09-12T16:41:04.841 info Netsdk:58964 11220:15328 dhnetsdk.cpp:4702]Leave CLIENT_StartListenEx.ret:1.
+[2023-09-12T16:41:08.741 info Netsdk:58964 11220:15172 Manager.cpp:9521]DH_START_LISTEN_FINISH_EVENT callback dwEventResult:0x0
+[2023-09-12T16:45:17.571 info Netsdk:58964 11220:15328 dhnetsdk.cpp:4716]Enter CLIENT_StopListen. lLoginID:1319940736.
+[2023-09-12T16:45:17.571 info Netsdk:58964 11220:15328 dhnetsdk.cpp:4737]Leave CLIENT_StopListen.ret:1.
+[2023-09-12T16:45:17.572 info Netsdk:58964 11220:15328 dhnetsdk.cpp:1075]Enter CLIENT_Logout. lLoginID:1319940736.
+[2023-09-12T16:45:17.573 error Netsdk:58964 11220:15328 TPTCPClient.cpp:723]Device is not online, ip:192.168.0.121
+[2023-09-12T16:45:17.573 info Netsdk:58964 11220:15328 dhnetsdk.cpp:1097]Leave CLIENT_Logout. ret:1

@@ -1,0 +1,39 @@
+Begin Time:2023-09-22T17:14:00.484
+[2023-09-22T17:14:00.484 info Netsdk:58964 10512:15768 AVNetSDKMgr.cpp:504]Load avnetsdk library dynamically
+[2023-09-22T17:14:00.486 info Netsdk:58964 10512:15768 AVNetSDKMgr.cpp:549]avnetsdk module handle: 00000233BEBD0000
+
+[2023-09-22T17:14:00.486 info Netsdk:58964 10512:15768 AVNetSDKMgr.cpp:823]Load configsdk dynamically
+[2023-09-22T17:14:00.487 info Netsdk:58964 10512:15768 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=00000233BAE60050, dwUser=0000000000000000].
+[2023-09-22T17:14:00.488 info Netsdk:58964 10512:15768 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-09-22T17:14:00.488 info Netsdk:58964 10512:15768 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-09-22T17:14:00.488 info Netsdk:58964 10512:15768 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-09-22T17:14:00.489 info Netsdk:58964 10512:15768 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-09-22T17:14:00.489 info Netsdk:58964 10512:15768 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-09-22T17:17:52.654 info Netsdk:58964 10512:15768 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:00000233BC568630, pstOutParam:00000233BABC5760.
+[2023-09-22T17:17:52.654 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1007]IP:192.168.1.58, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-09-22T17:17:52.781 error Netsdk:58964 10512:15768 dhdevprob.cpp:1579]Failed to login device , err:0
+[2023-09-22T17:17:52.781 error Netsdk:58964 10512:15768 dhdevprob.cpp:2979]Parse login response err:0
+[2023-09-22T17:17:52.782 error Netsdk:58964 10512:15768 dhdevprob.cpp:3341]Login failed, Failed to send login data
+[2023-09-22T17:17:52.782 error Netsdk:58964 10512:15768 Manager.cpp:11144]device is NULL
+[2023-09-22T17:17:52.782 error Netsdk:58964 10512:15768 Manager.cpp:11245]Login device failed, errorcode:1!
+[2023-09-22T17:17:52.782 error Netsdk:58964 10512:15768 dhnetsdk.cpp:1050]Login failed, ip:192.168.1.58, port:37777, specCap:0!
+[2023-09-22T17:17:52.782 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:1, login ID:0.
+[2023-09-22T17:17:52.783 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7929]Enter CLIENT_GetLastError.
+[2023-09-22T17:17:52.783 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7932]Leave CLIENT_GetLastError.[Error code=80000064.]
+[2023-09-22T17:17:52.784 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7929]Enter CLIENT_GetLastError.
+[2023-09-22T17:17:52.784 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7932]Leave CLIENT_GetLastError.[Error code=80000064.]
+[2023-09-22T17:17:52.795 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7929]Enter CLIENT_GetLastError.
+[2023-09-22T17:17:52.795 info Netsdk:58964 10512:15768 dhnetsdk.cpp:7932]Leave CLIENT_GetLastError.[Error code=80000064.]
+[2023-09-22T17:17:59.637 info Netsdk:58964 10512:15768 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:00000233BC568EA0, pstOutParam:00000233BC19C9A0.
+[2023-09-22T17:17:59.637 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1007]IP:192.168.1.58, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-09-22T17:18:00.415 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:0, login ID:-1145394112.
+[2023-09-22T17:18:01.691 info Netsdk:58964 10512:15768 dhnetsdk.cpp:534]Enter CLIENT_SetDVRMessCallBack: [cbMessage=00000233BAE60090, dwUser=0000000000000000].
+[2023-09-22T17:18:01.692 info Netsdk:58964 10512:15768 dhnetsdk.cpp:536]Leave CLIENT_SetDVRMessCallBack.
+[2023-09-22T17:18:01.692 info Netsdk:58964 10512:15768 dhnetsdk.cpp:4681]Enter CLIENT_StartListenEx. lLoginID:-1145394112.
+[2023-09-22T17:18:01.692 info Netsdk:58964 10512:15768 dhnetsdk.cpp:4702]Leave CLIENT_StartListenEx.ret:1.
+[2023-09-22T17:18:07.174 info Netsdk:58964 10512:1672 Manager.cpp:9521]DH_START_LISTEN_FINISH_EVENT callback dwEventResult:0x0
+[2023-09-22T17:55:35.462 info Netsdk:58964 10512:15768 dhnetsdk.cpp:4716]Enter CLIENT_StopListen. lLoginID:-1145394112.
+[2023-09-22T17:55:35.463 info Netsdk:58964 10512:15768 dhnetsdk.cpp:4737]Leave CLIENT_StopListen.ret:1.
+[2023-09-22T17:55:36.633 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1075]Enter CLIENT_Logout. lLoginID:-1145394112.
+[2023-09-22T17:55:36.640 error Netsdk:58964 10512:15768 TPTCPClient.cpp:723]Device is not online, ip:192.168.1.58
+[2023-09-22T17:55:36.641 info Netsdk:58964 10512:15768 dhnetsdk.cpp:1097]Leave CLIENT_Logout. ret:1

@@ -36,6 +36,12 @@ public class AlarmEventInfo {
         this.date = new Date();
     }
 
+    public AlarmEventInfo(int chn, int type) {
+        this.chn = chn;
+        this.type = type;
+        this.date = new Date();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

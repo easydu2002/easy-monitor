@@ -29,7 +29,6 @@ import java.util.function.Consumer;
 public class AlarmListenModule {
 
 	private final static Logger logger = LoggerFactory.getLogger(AlarmListenModule.class);
-
 	/**
 	 * ip -> 回调函数
 	 */

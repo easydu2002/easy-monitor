@@ -3,8 +3,8 @@ package top.easydu.easymonitor;
 import com.netsdk.demo.module.LoginModule;
 import com.netsdk.lib.NetSDKLib;
 import com.netsdk.lib.ToolKits;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.////logger;
+//import org.slf4j.////loggerFactory;
 
 import java.util.Map;
 import com.netsdk.lib.NetSDKLib.LLong;
@@ -18,8 +18,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class MonitorSdk {
 
-    private final static Logger logger = LoggerFactory.getLogger(MonitorSdk.class);
-
+//    private final static ////logger ////logger = ////loggerFactory.get////logger(MonitorSdk.class);
+//
     private final static Map<String, LLong> loginHandleMap = new ConcurrentHashMap();
 
     // 设备信息
@@ -44,19 +44,19 @@ public class MonitorSdk {
         boolean success = LoginModule.init(
 
                 (lLong, ip, port, pointer) -> {
-                    logger.warn(String.format("Device[%s] Port[%d] DisConnect!", ip, port));
+                    ////logger.warn(String.format("Device[%s] Port[%d] DisConnect!", ip, port));
                 },
 
                 (lLong, ip, port, pointer) -> {
 
-                    logger.warn(String.format("ReConnect Device[%s] Port[%d]", ip, port));
+                    ////logger.warn(String.format("ReConnect Device[%s] Port[%d]", ip, port));
                 }
         );
 
         if (success) {
-            logger.info("SDK initialization success!");
+            ////logger.info("SDK initialization success!");
         } else {
-            logger.info("SDK initialization failure! %s", LoginModule.netsdk.CLIENT_GetLastError());
+            ////logger.info("SDK initialization failure! %s", LoginModule.netsdk.CLIENT_GetLastError());
         }
 
         return success;
@@ -75,7 +75,7 @@ public class MonitorSdk {
         LLong lLong = loginHandleMap.get(m_strIp);
 
         if (lLong != null && lLong.longValue() != 0) {
-            logger.warn(String.format("设备 %s 重复登录!", m_strIp));
+            ////logger.warn(String.format("设备 %s 重复登录!", m_strIp));
             return true;
         }
 
@@ -93,11 +93,11 @@ public class MonitorSdk {
 
         LLong m_hLoginHandle = LoginModule.netsdk.CLIENT_LoginWithHighLevelSecurity(pstInParam, pstOutParam);
         if(m_hLoginHandle.longValue() == 0) {
-            logger.warn(String.format("Login Device[%s] Port[%d]Failed. %s", m_strIp, m_nPort, ToolKits.getErrorCodePrint()));
+            ////logger.warn(String.format("Login Device[%s] Port[%d]Failed. %s", m_strIp, m_nPort, ToolKits.getErrorCodePrint()));
         } else {
             loginHandleMap.put(m_strIp, m_hLoginHandle);
             deviceInfoExMap.put(m_strIp, pstOutParam.stuDeviceInfo);
-            logger.warn(String.format("Login Success [ " + m_strIp + " ]"));
+            ////logger.warn(String.format("Login Success [ " + m_strIp + " ]"));
         }
 
         return m_hLoginHandle.longValue() == 0 ? false : true;
@@ -113,7 +113,7 @@ public class MonitorSdk {
 
         LLong lLong = loginHandleMap.get(ip);
         if(lLong == null || lLong.longValue() == 0) {
-            logger.warn(String.format("设备%s 未登录！", ip));
+            ////logger.warn(String.format("设备%s 未登录！", ip));
             return false;
         }
 
@@ -124,7 +124,7 @@ public class MonitorSdk {
 
         if(bRet) {
             lLong.setValue(0);
-            logger.warn(String.format("设备%s 退出登录！", ip));
+            ////logger.warn(String.format("设备%s 退出登录！", ip));
         }
         return bRet;
     }
