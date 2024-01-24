@@ -22,6 +22,12 @@ import static org.junit.Assert.assertTrue;
 public class MainTest {
 
     public static void main(String[] args) throws IOException {
+        EventDispatcher.addEventListener(EventType.ALARM, new AlarmListener() {
+            @Override
+            public void on(Event<AlarmEventInfo> event) {
+                System.out.println("告警："+ event.getEventData());
+            }
+        });
 
         MonitorSdk hikSdk = MonitorFactory.createMonitorySdk(MonitorBrand.HIK);
         hikSdk.init();
@@ -45,11 +51,5 @@ public class MainTest {
 
             }
         }).start();
-        EventDispatcher.addEventListener(EventType.ALARM, new AlarmListener() {
-            @Override
-            public void on(Event<AlarmEventInfo> event) {
-                System.out.println("告警："+ event.getEventData());
-            }
-        });
     }
 }

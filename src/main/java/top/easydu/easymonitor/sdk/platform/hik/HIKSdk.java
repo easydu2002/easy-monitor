@@ -52,7 +52,9 @@ public class HIKSdk implements MonitorSdk {
                     else if (OsSelect.isLinux())
                         //Linux系统加载库路径
                         strDllPath = ".\\lib\\libhcnetsdk.so";
-                    hCNetSDK = (HCNetSDK) Native.loadLibrary(strDllPath, HCNetSDK.class);
+
+                    log.info("strDllPath", strDllPath);
+                    hCNetSDK = (HCNetSDK) Native.load(strDllPath, HCNetSDK.class);
                 } catch (Exception ex) {
                     log.warn("loadLibrary: " + strDllPath + " Error: " + ex.getMessage());
                     return false;
